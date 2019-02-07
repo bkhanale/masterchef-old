@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/aboutApp.css">
+</head>
+<body>
+    <div>
+        <img class="logo" src="../images/logo.png" alt="masterchef_logo">
+        <h1>Version 1.0.0</h1>
+    </div>
+    <div class="desc">
+        <h3>MasterChef is an <a href="https://github.com/electron">Electron</a> application.<br>Powered by <a href="https://developers.codechef.com">CodeChef API</a>.<br><br></h3>
+        <h4>Released as a part of CodeChef API Hackathon.</h4>
+    </div>
+    <footer>Copyright&copy; Bhushan Khanale 2018</footer>
+</body>
+<script type="text/javascript">
+    const shell = require('electron').shell;
+    document.addEventListener('click', function (event) {
+        if (event.target.tagName === 'A' && event.target.href.startsWith('https')) {
+            event.preventDefault();
+            shell.openExternal(event.target.href);
+        }
+    });
+</script>
+</html>

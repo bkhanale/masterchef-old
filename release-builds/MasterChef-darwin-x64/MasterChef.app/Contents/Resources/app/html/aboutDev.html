@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../css/aboutDev.css">
+</head>
+<body>
+    <div>
+        <img class="self" src="../images/rsz_dev.jpg" alt="Bhushan_Developer">
+    </div>
+    <div>
+        <h2>Hi, my name is Bhushan Khanale.</h2>
+        <h3>Feel free to contact me!</h3>
+    </div>
+    <div class="links">
+        <a href="https://github.com/bkhanale">
+            Github
+        </a>
+        <a href="https://linkedin.com/in/bhushan-khanale">
+            LinkedIn
+        </a>
+        <a href="mailto:bkhanale@gmail.com?subject=I loved your work!">
+            Gmail
+        </a>
+    </div>
+    <div class="footer">
+        <h4>CodeChef API Hackathon Team: no_hopes</h4>
+    </div>
+</body>
+<script type="text/javascript">
+    let shell = require('electron').shell;
+    document.addEventListener('click', function (event) {
+        if (event.target.tagName === 'A' && event.target.href.startsWith('http')) {
+            event.preventDefault();
+            shell.openExternal(event.target.href);
+        }
+    });
+</script>
+</html>

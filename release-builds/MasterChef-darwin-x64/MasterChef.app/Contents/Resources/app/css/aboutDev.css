@@ -1,0 +1,39 @@
+body {
+    background-color: #222222;
+    color: white;
+}
+
+.self {
+    border-radius: 50%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1%;
+}
+
+.links {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a:link, a:visited {
+    background-color: grey;
+    color: white;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: blue;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+}

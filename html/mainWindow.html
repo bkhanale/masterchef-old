@@ -1,0 +1,69 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../node_modules/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/codemirror/theme/monokai.css">
+    <link rel="stylesheet" href="../css/mainWindow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">
+    <link rel="stylesheet" href="../node_modules/codemirror/theme/base16-dark.css">
+    <script src="../node_modules/codemirror/lib/codemirror.js"></script>
+    <script src="../node_modules/codemirror/addon/selection/active-line.js"></script>
+    <script src="../node_modules/codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="../node_modules/codemirror/addon/edit/closebrackets.js"></script>
+    <script src="../node_modules/codemirror/mode/clike/clike.js"></script>
+    <script src="../node_modules/codemirror/mode/python/python.js"></script>
+    <script src="../node_modules/codemirror/addon/selection/active-line.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+</head>
+<body>
+    <div>
+        <div class="button-bar">
+            <form onsubmit="return false">
+                <input type="text" id="problem_code">
+                <button id="probut">Problem</button>
+                <input type="text" id="contest_code">
+                <button id="conbut">Contest</button>
+            </form>
+            <div id="dropdown">
+                <h4>Select Problem:</h4>
+                <div id="dropdown-content">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="problem-details">
+            <h5 id="problem-name"></h5>
+            <h5 id="problem-code"></h5>
+            <h5 id="problem-submissions"></h5>
+            <h5 id="problem-accuracy"></h5>
+        </div>
+        <div class="problem-data">
+            <div class="inner-problem-data" id="problem-data-content">
+                
+            </div>
+        </div>
+        <div class="code-editor">
+            <div class="inner-code-editor" id="code-editor">
+                <select onchange="selectLanguage()" id="select_lang_option">
+                    <option selected id="text/x-c++src">C++</option>
+                    <option id="text/x-csrc">C</option>
+                    <option id="python">Python</option>
+                    <option id="text/x-java">Java</option>
+                </select>
+                <div id="codemirror-textarea"></div>
+            </div>
+        </div>
+        <div class="run-bar">
+            <button id="runbut">Run</button>
+            <button id="runchkbut">Run and Check</button>
+            <button id="edittestbut">Edit Tests</button>
+            <button id="copysrcbut">Copy Source</button>
+        </div>
+        <div id="output-section">
+            <pre>Console Log:</pre>
+        </div>
+    </div>
+</body>
+<script src="../js/user.js"></script>
+<script src="../js/chef.js"></script>
+</html>

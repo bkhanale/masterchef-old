@@ -1,0 +1,22 @@
+.logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1%;
+    width: 600px;
+}
+
+.desc {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h1, h3, h4 {
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+}
+
+footer {
+    bottom: 0;
+    text-align: center;
+}

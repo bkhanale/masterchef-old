@@ -1,0 +1,24 @@
+html {
+    color: white;
+}
+
+body {
+    background-color: #222222;
+    font-family: 'Roboto Mono', monospace;
+    padding: 1%;
+}
+
+textarea {
+    color: white;
+    background-color: #333333;
+    height: 25%;
+    width: 100%;
+}
+
+.test-head h5, button {
+    display: inline-block;
+}
+
+.select-head h5, select {
+    display: inline-block;
+}

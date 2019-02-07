@@ -1,0 +1,58 @@
+html {
+    color: white;
+}
+
+body {
+    height: 90%;
+    max-height: 90%;
+    background-color: #222222;
+    font-family: 'Roboto Mono', monospace;
+    padding: 1%;
+    overflow: hidden;
+}
+
+.button-bar {
+    display: inline-block;
+}
+
+input {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.problem-details h5 {
+    font-size: 1em;
+    display: inline-block;
+}
+
+.problem-data {
+    color: white;
+    height: 25%;
+    max-height: 25%;
+    margin-bottom: 1%;
+}
+
+.inner-problem-data {
+    height: 100%;
+    max-height: 100%;
+    overflow: auto;
+    background-color: #333333;
+    font-family: monospace;
+}
+
+#problem-data-content {
+    font-size: 1em;
+    line-height: 2em;
+}
+
+.inner-code-editor {
+    height: 25%;
+    max-height: 25%;
+}
+
+#output-section {
+    background-color: #333333;
+    padding-top: 0%;
+    height: 20%;
+    max-height: 25%;
+    overflow-y: scroll;
+}
